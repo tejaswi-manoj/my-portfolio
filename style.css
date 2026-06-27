@@ -12,7 +12,8 @@ body {
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
-  position: absolute;
+  width: 500px;
+  height: 50px;
 }
 
 #typed-text {
@@ -48,21 +49,12 @@ h1 {
 }
 
 
-.tagline {
-  font-size: 2rem;
-  position: absolute;
-  top: 100px;
-
-}
-
-
 .tabs {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  position: absolute;
-  top: 170px;
   font-size: 1rem;
+  align-items: center;
 }
 
 .tabs>*:hover {
@@ -73,7 +65,42 @@ h1 {
 }
 
 .intro {
-  position: relative;
-  top: 210px;
   font-size: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.home_page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+
+.tagline {
+  font-size: 1.7rem;
+}
+
+.icon {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  width: 18px;
+  height: 20px;
+}
+
+#currently {
+  font-style: italic;
 }
