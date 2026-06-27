@@ -1,4 +1,4 @@
-const words = ["an engineer.", "an artist.", "a writer.", "a debater.", "a content creator."];
+const words = ["a builder.", "an artist.", "a writer.", "a debater.", "a content creator.", "a cuber."];
 const delayTyping = 150;
 const delayErasing = 100;
 const delayBetweenWords = 2000; // Pause when word is fully typed

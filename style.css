@@ -4,13 +4,14 @@ body {
   margin: 0px;
   min-height: 100vh;
   font-family: "EB Garamond", serif;
+  background-color: #fff0ce;
 }
 
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 5rem;
-  position: relative;
+  font-size: 3rem;
+  position: absolute;
 }
 
 #typed-text {
@@ -47,8 +48,24 @@ h1 {
 
 
 .tagline {
-  font-size: 2.4rem;
+  font-size: 2rem;
   position: absolute;
-  top: 200px;
+  top: 100px;
 
+}
+
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: absolute;
+  top: 170px;
+}
+
+.tabs>*:hover {
+  color: #a94c74;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
 }
