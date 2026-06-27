@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  padding-left: 3%;
+  margin: 0px;
+  min-height: 100vh;
+  font-family: "EB Garamond", serif;
+}
+
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  position: relative;
+}
+
+#typed-text {
+  color: #a94c74;
+  /* Highlight color for dynamic words */
+}
+
+/* Blinking cursor effect */
+.cursor {
+  display: inline-block;
+  background-color: #a94c74;
+  width: 3px;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #a94c74;
+  }
+
+  49% {
+    background-color: #a94c74;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+
+.tagline {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 200px;
+
+}
