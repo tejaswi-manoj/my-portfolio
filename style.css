@@ -1,11 +1,14 @@
 body {
   display: flex;
+  flex-direction: column;
   margin: 0px;
-  min-height: 100vh;
+  min-height: 100dvh;
   font-family: "EB Garamond", serif;
   background-color: #fff0ce;
   padding-left: 200px;
   padding-right: 200px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
 }
 
 nav {
@@ -21,7 +24,8 @@ a {
 
 
 #h {
-  font-family: "Playfair Display", serif;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
   font-size: 3rem;
   width: 500px;
   height: 50px;
@@ -98,6 +102,8 @@ a {
 .home_page {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
   gap: 40px;
 }
 
@@ -137,6 +143,7 @@ a {
 }
 
 .made {
+  font-size: 15px;
   padding-top: 35px;
 }
 
@@ -149,16 +156,24 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+.about_page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 40px;
 }
 
 .footer {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-
+  margin-top: auto;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-
 
 #home {
   color: #a94c74
@@ -178,4 +193,58 @@ a {
 
 #art {
   color: #a94c74
+}
+
+
+.cards {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  width: 450px;
+  height: 300px;
+  align-items: center;
+  padding: 10px;
+}
+
+.blog {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 375px;
+  height: 170px;
+  object-fit: cover;
+}
+
+.blog-info {
+  font-family: "Raleway", sans-serif;
+  width: 375px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.preview {
+  padding-top: 20px;
+  font-size: 13px;
+  ;
+}
+
+.tag {
+  width: fit-content;
+  height: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
 }
