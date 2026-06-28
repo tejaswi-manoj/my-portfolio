@@ -1,7 +1,7 @@
 const words = ["a builder.", "an artist.", "a writer.", "a debater.", "a content creator.", "a cuber."];
 const delayTyping = 150;
 const delayErasing = 100;
-const delayBetweenWords = 2000; // Pause when word is fully typed
+const delayBetweenWords = 2000;
 let wordIndex = 0;
 let charIndex = 0;
 
@@ -24,12 +24,11 @@ function erase() {
     setTimeout(erase, delayErasing);
   } else {
     wordIndex++;
-    if (wordIndex >= words.length) wordIndex = 0; // Loop back to start
-    setTimeout(type, delayTyping + 500); // Short pause before next word
+    if (wordIndex >= words.length) wordIndex = 0;
+    setTimeout(type, delayTyping + 500);
   }
 }
 
-// Initialize the loop on page load
 document.addEventListener("DOMContentLoaded", () => {
   if (words.length) setTimeout(type, 1000);
 });

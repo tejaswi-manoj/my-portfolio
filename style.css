@@ -8,12 +8,25 @@ body {
   padding-right: 200px;
 }
 
+nav {
+  list-style-type: none;
+  padding: 0;
+  margin: none;
+}
 
-h1 {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+#h {
   font-family: "Playfair Display", serif;
   font-size: 3rem;
   width: 500px;
   height: 50px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 #typed-text {
@@ -111,7 +124,6 @@ h1 {
   gap: 50px;
   align-items: center;
   align-self: center;
-  padding-top: 200px;
 }
 
 
@@ -137,4 +149,33 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+#home {
+  color: #a94c74
+}
+
+#about {
+  color: #a94c74
+}
+
+#projects {
+  color: #a94c74
+}
+
+#blog {
+  color: #a94c74
+}
+
+#art {
+  color: #a94c74
 }
