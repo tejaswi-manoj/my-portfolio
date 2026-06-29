@@ -39,6 +39,11 @@ a:hover {
   padding-bottom: 20px;
 }
 
+#h:hover {
+  text-decoration: none;
+
+}
+
 #typed-text {
   color: #a94c74;
   /* Highlight color for dynamic words */
