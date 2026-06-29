@@ -29,6 +29,10 @@ a:hover {
 
 }
 
+#p_link {
+  font-weight: bold;
+}
+
 #h {
   font-family: "EB Garamond", serif;
   font-weight: bold;
