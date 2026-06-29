@@ -23,6 +23,12 @@ a {
 }
 
 
+
+a:hover {
+  text-decoration: underline;
+
+}
+
 #h {
   font-family: "EB Garamond", serif;
   font-weight: bold;
@@ -175,26 +181,13 @@ a {
   width: 100%;
 }
 
-#home {
-  color: #a94c74
-}
-
-#about {
-  color: #a94c74
-}
-
-#projects {
-  color: #a94c74
-}
-
-#blog {
-  color: #a94c74
-}
-
+#home,
+#about,
+#projects,
+#blog,
 #art {
   color: #a94c74
 }
-
 
 .cards {
   display: flex;
@@ -244,9 +237,9 @@ a {
   width: 375px;
   height: 270px;
   object-fit: cover;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
 
 .blog_main {
   border: 1px solid black;
@@ -276,7 +269,10 @@ a {
 .preview {
   padding-top: 20px;
   font-size: 13px;
-  ;
+}
+
+.project_preview {
+  font-size: 13px;
 }
 
 .tag {
@@ -289,7 +285,8 @@ a {
 }
 
 
-.blog_box {
+.blog_box,
+.project_box {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -331,7 +328,8 @@ a {
 }
 
 
-.blog_text {
+.blog_text,
+#project_text {
   font-family: "Raleway", serif;
   font-size: 20px;
 }
@@ -350,6 +348,8 @@ a {
   flex-direction: column;
   gap: 20px;
   font-family: "Raleway", serif;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 
