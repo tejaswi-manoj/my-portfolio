@@ -203,6 +203,16 @@ a {
   justify-content: center;
 }
 
+
+
+.cards_projects {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .article {
   display: flex;
   flex-direction: column;
@@ -213,6 +223,30 @@ a {
   align-items: center;
   padding: 10px;
 }
+
+
+.project {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 15px;
+  width: 950px;
+  height: 300px;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+.project_main {
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 375px;
+  height: 270px;
+  object-fit: cover;
+  margin-left: 10px;
+}
+
 
 .blog_main {
   border: 1px solid black;
@@ -308,4 +342,24 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+}
+
+
+.project_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Raleway", serif;
+}
+
+
+.skills {
+  display: flex;
+  flex: row;
+  gap: 10px;
+}
+
+
+#field {
+  color: rgb(142, 142, 142);
 }
