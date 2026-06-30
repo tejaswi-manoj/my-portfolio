@@ -434,3 +434,37 @@ p {
   font-size: 1rem;
   color: rgb(80, 80, 80);
 }
+
+.pics_about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.pics_about>img {
+  border-radius: 15px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  border-radius: 15px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.caption {
+  font-style: italic;
+  text-align: center;
+  margin-top: 8px;
+  max-width: 300px;
+}
