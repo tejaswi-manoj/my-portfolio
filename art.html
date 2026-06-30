@@ -38,6 +38,10 @@
 <!-- BODY-->
 <!-- the body element goes within html and goes below the head element-->
 
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+</div>
+
 <body>
 
     <div class="about_page">
@@ -65,7 +69,7 @@
 
         <div class="cards">
             <div class="article" id="artwork">
-                <img id="art_img" src="artwork/q_of_hearts.jpeg">
+                <img id="art_img" src="artwork/q_of_hearts.jpeg" onclick="openLightbox(this.src)">
                 <div id="title">queen of hearts</div>
                 <div class="preview"> 🎵 i'm the queen of broken hearts, break you in a thousand parts 🎵...a realistic
                     card
@@ -73,14 +77,140 @@
             </div>
 
             <div class="article" id="artwork">
-                <img id="art_img" src="artwork/wine_painting.jpeg">
+                <img id="art_img" src="artwork/wine_painting.jpeg" onclick="openLightbox(this.src)">
                 <div id="title">wine glass painting</div>
                 <div class="preview">teal is one of my favorite colors. this is a mini painting i made on
                     some scrap paper.</div>
             </div>
 
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/candle.jpg" onclick="openLightbox(this.src)">
+                <div id="title">candle light painting</div>
+                <div class="preview">this is the painting that introduced me to the world of realism.</div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/car.jpg" onclick="openLightbox(this.src)">
+                <div id="title">porsche car</div>
+                <div class="preview">i have a penchant for painting porsche cars. maybe it's my way of manifesting one.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/dice_ice.jpg" onclick="openLightbox(this.src)">
+                <div id="title">melting red dice</div>
+                <div class="preview">the kind of painting you do when you want to do art but it's 2 am already and you
+                    want to sleep in less than 30 minutes.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/formula.jpg" onclick="openLightbox(this.src)">
+                <div id="title">max verstappen with a helmet</div>
+                <div class="preview"> i don't watch f1 but you best believe i find it aesthetic.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/moon.jpg" onclick="openLightbox(this.src)">
+                <div id="title">the moon</div>
+                <div class="preview"> will always be a selenophile. seriously, i could stare at the moon for hours.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/sailboat.jpg" onclick="openLightbox(this.src)">
+                <div id="title">sailboat in the ocean</div>
+                <div class="preview">a painting i did following a really great tutorial by ryan o'rourke.
+                </div>
+            </div>
+
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/page.jpg" onclick="openLightbox(this.src)">
+                <div id="title">gossip girl</div>
+                <div class="preview"> i'll never shut up about gossip girl. another lazy painting.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/perfume.jpg" onclick="openLightbox(this.src)">
+                <div id="title">the devil wears chanel</div>
+                <div class="preview">painted this during DWP week. this is so art deco.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/porsche.jpg" onclick="openLightbox(this.src)">
+                <div id="title">porsche 2</div>
+                <div class="preview">you don't understand my obsession with porsche.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/totoro.jpg" onclick="openLightbox(this.src)">
+                <div id="title">my neighbor totoro</div>
+                <div class="preview">fake studio ghibli fan alert. again, i love the aesthetic in these films.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/starry_night.jpg" onclick="openLightbox(this.src)">
+                <div id="title">recreation of starry night by van gogh</div>
+                <div class="preview"> van gogh is my favorite post-impressionist painter.
+                </div>
+            </div>
+
         </div>
 
+
+        <div id="art_header_crocheting">CROCHETING</div>
+
+        <div class="cards">
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/crochet_babydoll.jpg" onclick="openLightbox(this.src)">
+                <div id="title">babydoll top</div>
+                <div class="preview">i love babydoll tops. so i decided to crochet one in my favorite color!
+                </div>
+            </div>
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/crochet_pink_top.jpg" onclick="openLightbox(this.src)">
+                <div id="title">pink top</div>
+                <div class="preview">i am super proud of this one because i made the pattern for the sleeves myself!
+                </div>
+            </div>
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/crochet_table_mat.jpg" onclick="openLightbox(this.src)">
+                <div id="title">table mat</div>
+                <div class="preview">my first ever crochet project - made this for my mom! followed a tutorial to a T.
+                </div>
+            </div>
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/crochet_blue_beanie_final.jpg" onclick="openLightbox(this.src)">
+                <div id="title">blue beanie</div>
+                <div class="preview">i made this for one of my friends!
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div id="art_header_crocheting">MISCELLANEOUS</div>
+
+        <div class="cards">
+
+            <div class="article" id="artwork">
+                <img id="art_img" src="artwork/metal_rose.jpg" onclick="openLightbox(this.src)">
+                <div id="title">metal rose</div>
+                <div class="preview">you best believe i'll be at a stem
+                    workshop on 14th feb either soldering on a heart pcb or water jetting my metal rose parts.
+                </div>
+            </div>
+
+        </div>
 
 
         <div class="footer">
