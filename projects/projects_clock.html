@@ -64,52 +64,85 @@
 
 
         <div class="project_box" id="project_text">
-            <h1>Developing a Synthetic Grid in Africa: A Case Study in Ghana</h1>
+            <h1>Voice-Controlled Spray Alarm Clock [In Progress]</h1>
 
             <div class="skills">
-                <div id="field">POWER SYSTEMS • </div>
+                <div id="field">EMBEDDED SYSTEMS • </div>
+                <div class="tag">Raspberry Pi</div>
                 <div class="tag">Python</div>
-                <div class="tag">Julia</div>
-                <div class="tag">Power Flow</div>
+                <div class="tag">TinkerCAD</div>
             </div>
 
-            <img class="blog_article_img projects_img" src="../pics_projects/ghana_grid.png">
+            <img class="blog_article_img projects_img" src="../pics_projects/spray_alarm_clock.jpg">
 
             <h3>Challenge</h3>
 
-            <p class="challenge">Build and validate a synthetic power grid for an African nation, which could be used
-                for power systems studies, algorithmic benchmarking, regional research, and educational purposes.</p>
+            <p class="challenge">Build a voice-controlled alarm clock that wakes you up with your favorite song and
+                sprays
+                water whenever you try to snooze.</p>
 
             <h3>Background</h3>
 
-            <p>Power grids are critical infrastructure and their associated datasets are often kept confidential for
-                this purpose. However, this lack of public access can hinder innovation and research productivity.
-                Synthetic grid modeling is a method developed to mirror real-world power networks, utilizing publicly
-                available data and the laws of physics.</p>
+            <p>I cannot get myself to wake up in the morning, no matter what I try. Keeping my phone 10 feet away,
+                changing the alarm ringtone to my favorite song, sleeping early - nothing seems to work. This is because
+                I believe that alarms are fundamentally flawed because they have the feature of the snooze button. So I
+                decided to
+                build an alarm clock
+                that would wake me up the way my mom used to back in high school: spraying water on me if I ever try to
+                hit snooze. </p>
 
             <h3>Approach</h3>
 
-            <p>The three components that make up the electric grid are generation, transmission, and distribution.
-                We used government energy reports for generator locations and capacities, a regional West African
-                infrastructure database for transmission topology, and district-level energy
-                profiles for demand. For electrical parameters we could not directly source, such as line resistance and
-                reactance,
-                we used a real field report covering a handful of lines as ground truth, then extrapolated to the rest
-                of the grid by assuming lines of the same voltage level share conductor type and construction, applying
-                standard transmission line equations to fill in the gaps. To validate the model, we compared its
-                topological structure against patterns seen in real-world power
-                grids, and ran a DC optimal power flow analysis, relaxing our initial line capacity estimates where
-                needed to achieve a feasible solution. This was a check that also revealed which parts of the grid we
-                had
-                underestimated. Finally, to demonstrate the model's real-world value, we used it to simulate the impact
-                of five solar farms planned for completion by 2030, comparing operating costs and carbon emissions with
-                and without them. We found potential annual savings of $167 million and a 25% reduction in daily CO₂
-                emissions. </p>
+            <p>I thought about all the features I would like my alarm clock to have:
 
-            <h3>Research Project Link</h3>
+            <ul>
+                <li>It should wake me up without my phone</li>
+                <li>It should emulate how my mom used to wake me up: gently in the beginning (because I don't want to
+                    immediately ruin my morning, of course) with a song I like and if I try to hit snooze, it should
+                    spray water on me. </li>
+                <li>Setting the alarm time should be as seamless and easy as using my phone, preferably through my
+                    voice.</li>
+            </ul>
 
-            <p>Read our full research paper <a id="p_link" href="https://ieeexplore.ieee.org/document/11063343"
-                    target="_blank">here</a>.</p>
+            </p>
+
+            <p>
+                After I came up with the project requirements, I mapped them to the actual parts I would need:
+
+            <ul>
+                <li><strong>Raspberry Pi</strong>: main brain of the clock, running all programs</li>
+                <li><strong>LED Matrix</strong>: to show the time</li>
+                <li><strong>LCD Display</strong>: to show date, day, and the next alarm set</li>
+                <li><strong>DFPlayer + Speaker</strong>: to play my favorite songs, randomized every morning</li>
+                <li><strong>Water Pump + hose + relay module + power supply for pump</strong>: to spray water</li>
+                <li><strong>USB Mic</strong>: to set the alarm with voice</li>
+                <li><strong>3D Printed casing</strong>: to hold it all together and make it look like an actual product
+                </li>
+                <li><strong>Jumper wires</strong>: to connect everything</li>
+            </ul>
+
+            </p>
+            <p>
+
+                I followed simple tutorials online to set up most of the above components. For setting my alarm with my
+                voice, I researched some speech to text models and narrowed my final choice
+                down to Vosk. It’s a lightweight, speech to text model that runs offline and seemed to be a good choice
+                to
+                run on a Raspberry Pi. I had Claude do most of the heavy-lifting for this. For the 3D casing, I used
+                TinkerCAD and a bunch of free 3D models from <a target="_blank" id="p_link"
+                    href="https://www.printables.com/">Printables.com.</a>
+
+            </p>
+
+            <h3>In Progress</h3>
+
+            I still need to:
+            <ul>
+                <li>3D-print the casing</li>
+                <li>use perfboards for the final product</li>
+            </ul>
+            <p>Feel free to use the code if you want to build one of your own from <a id="p_link"
+                    href="https://github.com/tejaswi-manoj/alarm-clock" target="_blank">here</a>!</p>
 
         </div>
 
