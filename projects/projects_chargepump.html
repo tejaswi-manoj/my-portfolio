@@ -64,102 +64,49 @@
 
 
         <div class="project_box" id="project_text">
-            <h1>Ring Oscillator</h1>
+            <h1>Design Fundamentals Project PCB</h1>
 
             <div class="skills">
-                <div id="field">ANALOG AND MIXED-SIGNAL DESIGN • </div>
+                <div id="field">ANALOG AND MIXED-SIGNAL DESIGN
+                    • </div>
                 <div class="tag">Cadence Virtuoso</div>
             </div>
 
-            <img class="blog_article_img projects_img" src="../pics_projects/ring_oscillator.png">
+            <img class="blog_article_img projects_img" src="../pics_projects/charge_pump.png">
 
             <h3>Challenge</h3>
 
-            <p class="challenge">Build a ring oscillator with a buffer and a load of 1 pF capacitance.</p>
+            <p class="challenge">Design a charge pump for a phase locked loop (PLL).</p>
 
             <h3>Background</h3>
 
-            <p>This was an onboarding project I completed to become a member of the Analog and Mixed-Signal Design
-                Subteam at GT's
-                premier chip design organization.</p>
-
+            <p>I am currently leading the Phase Locked Loop (PLL) team at Silicon Jackets. My project was to
+                design a charge pump for the PLL.</p>
 
             <h3>Approach</h3>
-
-            <p>These were the requirements given:</p>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Min</th>
-                        <th>Max</th>
-                        <th>Unit</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>VDD</td>
-                        <td>--</td>
-                        <td>1.8</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>GND</td>
-                        <td>--</td>
-                        <td>0</td>
-                        <td>V</td>
-                    </tr>
-                    <tr>
-                        <td>Oscillator Power</td>
-                        <td>--</td>
-                        <td>1</td>
-                        <td>mW</td>
-                    </tr>
-                    <tr>
-                        <td>Load Capacitance</td>
-                        <td>--</td>
-                        <td>1</td>
-                        <td>pF</td>
-                    </tr>
-                    <tr>
-                        <td>Oscillation Frequency</td>
-                        <td>450</td>
-                        <td>550</td>
-                        <td>MHz</td>
-                    </tr>
-                    <tr>
-                        <td>Temperature</td>
-                        <td>0</td>
-                        <td>70</td>
-                        <td>°C</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>For a 3-stage ring oscillator, f = 1 / (2·N·t<sub>p</sub>), where N is the number of inverter stages and
-                t<sub>p</sub>
-                is the propagation delay per stage. If we are targetting a range 450–550 MHz meant that we need a a
-                t<sub>p</sub> of roughly
-                303–370 ps.</p>
-
-            <p>Load capacitors at each inverter output allow us to tune that delay, since t<sub>p</sub> =
-                C<sub>L</sub>·V<sub>DD</sub> /
-                I<sub>driv</sub>. Propagation delay scales directly with load capacitance. Starting from C ≈ 17.36 fF
-                (t<sub>p</sub> ≈ 219.27 ps), scaling by ~1.6× to C ≈ 27.74 fF brought the delay into range.</p>
-
-            <p>The 1 pF output load was too large for the oscillator to drive directly, so a tapered inverter buffer
-                chain
-                stepped up the drive strength, with each stage roughly 2× the size of the one before it with Stage 1
-                driving Stage
-                2, Stage 2 driving Stage 3, Stage 3 driving Stage 4, and Stage 4 driving the 1 pF load.</p>
-
             <p>
-                I completed designing the schematic and the physical design as well. My project passed both LVS and DRC
-                checks.
-            </p>
-        </div>
+                My goal was to build a low-voltage, low-power, simple solution ​
 
+                without an op-amp (since they increase area and consume power) and without output jumps​. In my final
+                design, I chose a wide swing current mirror, with pump-up and pump-down circuits​. This provided a
+                symmetric pump structure and reduced output jumps. I was able to successfully simulate the pumping up
+                and pumping down of the output current in Cadence Virtuoso, after a few tweaks with the W/L ratios and
+                design changes of the current mirror. I also coordinated the integration of the
+                PLL block with other parts - the voltage-controlled oscillator, phase detector, and low pass filter.
+
+            </p>
+
+            <h3>In Progress</h3>
+            <p>
+                Next steps:
+            <ul>
+                <li>Testing and fine-tuning after integration.</li>
+                <li>Physical design.</li>
+            </ul>
+
+            </p>
+
+        </div>
 
 
         <div class="footer">
